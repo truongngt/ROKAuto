@@ -100,3 +100,6 @@ class BotConfig:
         self.enableScout = config.get('enableScout', False)
         self.enableInvestigation = config.get('enableInvestigation', True)
 
+        # Build
+        self.enableBuild = True
+

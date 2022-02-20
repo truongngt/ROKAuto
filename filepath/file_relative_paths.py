@@ -163,6 +163,16 @@ class ImagePathAndProps(Enum):
                                     (1280, 720), (0, 0, 0, 0), 0.80, 25, HAS_MATCH_QUERY]
     VERIFICATION_VERIFY_TITLE_IMAGE_PATH = ['resource\\verification_verify_title.png',
                                              (1280, 720), (0, 0, 0, 0), 0.90, 25, VERIFICATION_VERIFY_TITLE]
+    BUILD_ICON_BTN_IMAGE_PATH = ['resource\\build-icon-btn.png',
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, BUILD_ICON_BTN]
+    BUILD_BTN_IMAGE_PATH = ['resource\\build-btn.png',
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, BUILD_BTN]
+    CITY_EDITOR_BTN_IMAGE_PATH = ['resource\\city-editor-btn.png',
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, CITY_EDITOR_BTN]     
+    UPGRADE_BTN_IMAGE_PATH = ['resource\\upgrade-btn.png',
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, UPGRADE_BTN] 
+    TICK_BTN_IMAGE_PATH = ['resource\\tick-btn.png',
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, TICK_BTN]                            
 
 class GuiCheckImagePathAndProps(Enum):
     VERIFICATION_VERIFY_BUTTON_IMAGE_PATH = ['resource\\verification_verify_button.png',

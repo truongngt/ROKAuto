@@ -83,7 +83,7 @@ def solve_verification(img):
     ans = None
     while (ans is None or ans == '') and tid[0] != '#':
         ans = get_answer(server_url, tid)
-        time.sleep(2)
+        time.sleep(10)
     if tid[0] != '#':
         points = ans.split('|')
         for i in range(len(points)):

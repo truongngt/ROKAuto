@@ -136,6 +136,7 @@ class Task:
         if not self.isRoKRunning():
             self.set_text(insert='game is not running, try to start game')
             self.runOfRoK()
+            time.sleep(60)
             start = time.time()
             end = start
             while end - start <= 300 and self.isRoKRunning():
@@ -162,7 +163,7 @@ class Task:
         pos_list = None
         try:
             self.set_text(insert='pass verification')
-            box = (400, 0, 880, 720)
+            box = (400, 190, 880, 650)
             ok = [780, 680]
             img = self.gui.get_curr_device_screen_img()
             img = img.crop(box)
@@ -176,7 +177,7 @@ class Task:
                 return None
 
             for pos in pos_list:
-                self.tap(400 + pos[0], pos[1], 1)
+                self.tap(400 + pos[0], 190 + pos[1], 1)
             self.tap(780, 680, 5)
 
         except Exception as e:
@@ -281,14 +282,14 @@ class Task:
     def isRoKRunning(self):
         cmd = 'dumpsys window windows | grep mCurrentFocus'
         str = self.device.shell(cmd)
-        return str.find('com.lilithgame.roc.gp/com.harry.engine.MainActivity') != -1
+        return str.find('com.rok.gp.vn/com.harry.engine.MainActivity') != -1
 
     def runOfRoK(self):
-        cmd = 'am start -n com.lilithgame.roc.gp/com.harry.engine.MainActivity'
+        cmd = 'am start -n com.rok.gp.vn/com.harry.engine.MainActivity'
         str = self.device.shell(cmd)
 
     def stopRok(self):
-        cmd = 'am force-stop com.lilithgame.roc.gp'
+        cmd = 'am force-stop com.rok.gp.vn'
         str = self.device.shell(cmd)
 
     def set_text(self, **kwargs):

@@ -23,6 +23,7 @@ from tasks.Tavern import Tavern
 from tasks.Training import Training
 from tasks.MysteryMerchant import MysteryMerchant
 from tasks.constants import TaskName
+from tasks.Build import Build
 from utils import stop_thread
 import random
 
@@ -75,6 +76,7 @@ class Bot():
         self.scout_task = Scout(self)
         self.tavern_task = Tavern(self)
         self.training = Training(self)
+        self.build_task = Build(self)
 
         # Other task
         self.screen_shot_task = ScreenShot(self)
@@ -118,6 +120,7 @@ class Bot():
             [self.scout_task, 'enableScout'],
             [self.tavern_task, 'enableTavern'],
             [self.training, 'enableTraining'],
+            [self.build_task, 'enableBuild']
         ]
 
         if self.building_pos is None:
