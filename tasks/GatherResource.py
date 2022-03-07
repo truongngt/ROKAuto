@@ -146,8 +146,13 @@ class GatherResource(Task):
     def get_min_resource(self):
         self.tap(725, 20, 1)
         result = self.gui.resource_amount_image_to_string()
+
+        # if account don't have gold
+        if result[0] == -1 :
+            result = [result[1], result[2], result[3], result[0]]
+        
         self.set_text(
-            insert="\nFood: {}\nWood: {}\nStone: {}\nGold: {}\n".format(result[0], result[1], result[2], result[3]))
+                insert="\nFood: {}\nWood: {}\nStone: {}\nGold: {}\n".format(result[0], result[1], result[2], result[3]))
 
         ratio = [
             self.bot.config.gatherResourceRatioFood,
