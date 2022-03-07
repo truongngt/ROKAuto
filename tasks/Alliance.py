@@ -79,6 +79,7 @@ class Alliance(Task):
                                 super().tap(x, y, 0.03)
                     else:
                         super().set_text(insert="Cannot found Officer's Recommendation")
+
                 elif name == 'HELP':
                     super.set_text(insert='Alliance Help')
                     help_in_alliance_pos = (1010, 400)
@@ -87,6 +88,7 @@ class Alliance(Task):
                     help_in_alliancehelp_pos = (635, 655)
                     x, y = help_in_alliancehelp_pos
                     super().tap(x, y, 1)
+                    
         except Exception as e:
             traceback.print_exc()
             return next_task
