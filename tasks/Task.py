@@ -165,6 +165,7 @@ class Task:
             self.set_text(insert='pass verification')
             box = (400, 190, 880, 650)
             ok = [780, 680]
+            time.sleep(10)
             img = self.gui.get_curr_device_screen_img()
             img = img.crop(box)
             if config.global_config.method == HAO_I:

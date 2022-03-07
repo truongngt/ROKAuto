@@ -101,5 +101,5 @@ class BotConfig:
         self.enableInvestigation = config.get('enableInvestigation', True)
 
         # Build
-        self.enableBuild = True
+        self.enableBuild = False
 

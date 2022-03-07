@@ -43,3 +43,7 @@ devices_config.json
 save
 test_code
 test_screen_caps
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]

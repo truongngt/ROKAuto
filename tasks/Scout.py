@@ -44,12 +44,13 @@ class Scout(Task):
 
                     if idx < len(result_list):
                         x, y = result_list[idx]['result']
-                        self.tap(x, y, 2)
+                        self.tap(x, y, 5)
                     else:
                         break
-
-                    x, y = pos
-                    self.tap(x, y, 2)
+                    
+                    # Error loop: Click back to home
+                    # x, y = pos
+                    # self.tap(x, y, 5)
 
                 else:
                     break

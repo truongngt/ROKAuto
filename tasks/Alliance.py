@@ -14,7 +14,7 @@ class Alliance(Task):
         super().set_text(title='Alliance', remove=True)
         alliance_btn_pos = (1030, 670)
         try:
-            for name in ['GIFTS', 'TERRITORY', 'TECHNOLOGY']:
+            for name in ['GIFTS', 'TERRITORY', 'TECHNOLOGY', 'HELP']:
                 super().set_text(insert='Open alliance')
                 super().back_to_home_gui()
                 super().menu_should_open(True)
@@ -79,7 +79,14 @@ class Alliance(Task):
                                 super().tap(x, y, 0.03)
                     else:
                         super().set_text(insert="Cannot found Officer's Recommendation")
-
+                elif name == 'HELP':
+                    super.set_text(insert='Alliance Help')
+                    help_in_alliance_pos = (1010, 400)
+                    x, y = help_in_alliance_pos
+                    super().tap(x, y, 3)
+                    help_in_alliancehelp_pos = (635, 655)
+                    x, y = help_in_alliancehelp_pos
+                    super().tap(x, y, 1)
         except Exception as e:
             traceback.print_exc()
             return next_task
