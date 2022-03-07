@@ -172,7 +172,11 @@ class ImagePathAndProps(Enum):
     UPGRADE_BTN_IMAGE_PATH = ['resource\\upgrade-btn.png',
                                     (1280, 720), (0, 0, 0, 0), 0.80, 25, UPGRADE_BTN] 
     TICK_BTN_IMAGE_PATH = ['resource\\tick-btn.png',
-                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, TICK_BTN]                            
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, TICK_BTN]  
+    CITY_HALL_BTN_IMAGE_PATH = ['resource\\city-hall-btn.png',
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, CITY_HALL_BTN]   
+    GO_BTN_IMAGE_PATH = ['resource\\go-btn.png',
+                                    (1280, 720), (0, 0, 0, 0), 0.80, 25, GO_BTN]                       
 
 class GuiCheckImagePathAndProps(Enum):
     VERIFICATION_VERIFY_BUTTON_IMAGE_PATH = ['resource\\verification_verify_button.png',
