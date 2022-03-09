@@ -151,6 +151,8 @@ class ImagePathAndProps(Enum):
                                      (1280, 720), (0, 0, 0, 0), 0.80, 25, IDLE_ICON]
     SCOUT_ZZ_ICON_IMAGE_PATH = ['resource\\scout_zz_icon.png',
                                      (1280, 720), (0, 0, 0, 0), 0.80, 25, ZZ_ICON]
+    SCOUT_RETURN_ICON_IMAGE_PATH = ['resource\\scout_return_icon.png',
+                                     (1280, 720), (0, 0, 0, 0), 0.80, 25, SCOUT_RETURN_ICON]
     MERCHANT_ICON_IMAGE_PATH = ['resource\\merchant_icon.png',
                                      (1280, 720), (0, 0, 0, 0), 0.80, 25, MERCHANT_ICON]
     MERCHANT_FREE_BTN_IMAGE_PATH = ['resource\\merchant_free_btn.png',

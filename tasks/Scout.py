@@ -148,7 +148,8 @@ class Scout(Task):
 
                 found, name, pos = self.gui.check_any(
                     ImagePathAndProps.SCOUT_IDLE_ICON_IMAGE_PATH.value,
-                    ImagePathAndProps.SCOUT_ZZ_ICON_IMAGE_PATH.value
+                    ImagePathAndProps.SCOUT_ZZ_ICON_IMAGE_PATH.value,
+                    ImagePathAndProps.SCOUT_RETURN_ICON_IMAGE_PATH.value
                 )
                 if found:
                     x, y = pos
